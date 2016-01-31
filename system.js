@@ -1,4 +1,4 @@
-var baseRepo = 'https://github.com/CoderDojo/';
+var baseRepo = 'https://github.com/adhorrig/';
 var _ = require('lodash');
 
 var defaultBranch = 'master';
