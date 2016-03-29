@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "cp-ld",
   "version": "1.0.0",
   "description": "Local dev for CoderDojo",
@@ -25,5 +26,43 @@
   "devDependencies": {
     "es6-promise": "3.0.2",
     "semistandard": "7.0.2"
+=======
+  "name": "salesforce-service",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "service.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node service.js",
+    "lint": "./node_modules/.bin/semistandard *.js config/*.js",
+    "test": "npm run lint && bash -c 'source ./config/development.env; ./node_modules/.bin/lab --ignore __core-js_shared__ --flat --threshold 68 -r html -o ./coverage/coverage.html -r lcov -o ./coverage/lcov.info -r json -o ./coverage/coverage.json -r console -o stdout'",
+    "covrep": "bash test/covrep.sh"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "author": "nearForm",
+  "license": "MIT",
+  "dependencies": {
+    "jsforce": "1.4.1",
+    "le_node": "~1.1.0",
+    "lodash": "3.10.1",
+    "newrelic": "1.19.2",
+    "seneca": "0.7.2",
+    "seneca-salesforce-store": "nearform/seneca-salesforce-store.git",
+    "seneca-queue": "~0.2.0",
+    "moment": "~2.12.0",
+    "limax": "~1.2.0"
+  },
+  "devDependencies": {
+    "chai": "2.2.0",
+    "lab": "5.15.1",
+    "pre-commit": "1.1.2",
+    "semistandard": "7.0.3",
+    "sinon": "1.16.1"
+>>>>>>> 7d82d1ce218cf8c46b497ff56273cf79f544cc28
   }
 }
